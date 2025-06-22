@@ -1,0 +1,9 @@
+[package]
+name = "badgerclips"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+clap = { version = "4.5.40", features = ["derive"] }
+ffprobe = "0.4.0"
+log = "0.4.27"
