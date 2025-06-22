@@ -7,6 +7,8 @@ use clap::{ArgMatches, Command, Subcommand};
 fn cli() -> Command {
     Command::new("badgerclips")
         .about("Utilities for dealing with video clips")
+        .version(clap::crate_version!())
+        .author(clap::crate_authors!())
         .subcommand_required(true)
         .subcommand(split::command())
 }
